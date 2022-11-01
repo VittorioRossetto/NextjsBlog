@@ -21,7 +21,12 @@ export default function Home({ allPostsData }) {
         <title>{ siteTitle }</title>
       </Head>
       <section className={' ${utilStyles.headingMd} ${utilStyles.padding1px}'}>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a ullamcorper nisi, ac vestibulum leo. Phasellus eget odio finibus, scelerisque.</p>
+        <p>
+          Simple blog enterely realized using <Link href={'https://nextjs.org/learn/basics/create-nextjs-app'}>Vercel tutorial</Link> on how to build a first next.js project.
+        </p>
+        <p>
+          Articles below are only examples, taken from vercel's tutorial
+        </p>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
